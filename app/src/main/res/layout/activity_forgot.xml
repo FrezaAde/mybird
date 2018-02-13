@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/forgot" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logoputih"
+                    android:layout_margin="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorblack"
+                    android:textSize="28sp"
+                    android:text="Lupa Sandi?"/>
+
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="Kami Memerlukan Email Anda Untuk Mengirimkan Password Baru"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    >
+
+                    <EditText
+                        android:paddingLeft="15dp"
+                        android:id="@+id/editPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/edittext"
+                        android:ems="100"
+                        android:hint="@string/text_hint_phone"
+                        android:layout_gravity="center"
+                        android:inputType="textWebEmailAddress"
+
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:drawablePadding="5dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/text_btn_request_password"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/buttonijo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/backforgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" BACK TO LOGIN"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
